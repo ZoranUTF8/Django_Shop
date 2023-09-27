@@ -1,0 +1,8 @@
+<h1>All products</h1>
+
+<ul>
+    {% for product in allProducts %}
+    <li>{{ product.name }} $:{{ product.price }}</li>
+    <img src="{{ product.img_url }}" alt="{{ product.name }}" width="300" height="300">
+    {% endfor %}
+</ul>
